@@ -1,0 +1,62 @@
+/* Ajuster la largeur du panneau de gauche */
+.sidebar {
+    width: 180px; /* Réduire la largeur du panneau de gauche */
+}
+
+.content-wrapper {
+    margin-left: 180px; /* Ajuster la marge de contenu en fonction de la nouvelle largeur du panneau */
+    padding: 0 20px; /* Ajouter des marges à gauche et à droite */
+}
+
+/* Réduire la taille de la police et des boutons dans le tableau CRUD */
+.table th, .table td {
+    font-size: 12px; /* Taille de la police ajustée */
+    padding: 6px; /* Ajuster le padding */
+    word-wrap: break-word; /* Forcer les mots longs à se briser et s'afficher sur plusieurs lignes */
+    white-space: normal; /* Permettre le retour à la ligne */
+}
+
+.btn-sm {
+    padding: 4px 8px; /* Ajuster la taille des boutons */
+    font-size: 12px; /* Taille de la police des boutons */
+}
+
+/* Aligner les boutons d'action */
+.btn-action {
+    display: inline-block;
+    width: 100%; /* Prendre toute la largeur de la cellule */
+    margin: 2px 0; /* Ajouter une marge en haut et en bas */
+}
+
+/* Éliminer le défilement dans le panneau latéral */
+.sidebar {
+    overflow: hidden; /* Éliminer le défilement */
+}
+
+/* Ajuster la largeur du tableau */
+.table {
+    width: 100%; /* Utiliser toute la largeur disponible */
+    table-layout: fixed; /* Assurer que les colonnes sont de largeur fixe */
+}
+
+/* Ajouter une largeur minimale pour le container de la boîte */
+.box {
+    min-width: 1000px; /* Ajuster la largeur minimale de la boîte pour forcer la largeur du tableau */
+}
+
+
+.breadcrumb {
+    background: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.breadcrumb > li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.breadcrumb > li + li:before {
+    content: "/\00a0";
+}
